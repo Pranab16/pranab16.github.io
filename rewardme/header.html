@@ -60,14 +60,12 @@ localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgcl
   .headerImage{
     width: 100%;
     min-height: 70px;
-    background-image: url("images/rewardme_header_image.png");
-    /*overflow: auto;*/
-    background-repeat: repeat-x;
   }
-  .sign-style.newsletter a {border-right:0;}
-  a.userName {
-    border-right: 1px solid #373737 !important;
+
+  .sign-style.newsletter a {
+    border-right:0;
   }
+
   .clear {
     clear:both;
   }
@@ -96,7 +94,7 @@ localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgcl
     font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
     font-weight: 300;
     width: 100%;
-    border-radius: 5px;
+    border-radius: 3px;
   }
   .input.highlighted .button, .input-group.highlighted .button {
     position: absolute;
@@ -127,79 +125,105 @@ localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgcl
   .header .logo-search-section .header-heading {
     float: left;
     padding-top: 4%;
-    padding-left: 5%;
+    padding-left: 8%;
   }
   .header .logo-search-section .header-heading h2 {
     font-size: 30px;
   }
 
+  .header-background {
+    background-color: #E7E7E7;
+  }
+
+  .header-background .newsletter a.userName {
+    border-right: 1px solid #373737;
+  }
+
+  .header-background.gillette {
+    background-color: #0C2E4A;
+  }
+
+  .header-background.gillette .row-fluid li, .header-background.gillette .row-fluid span, .header-background.gillette .row-fluid a {
+    color: #FFFFFF;
+  }
+
+  .header-background.gillette .newsletter a.userName {
+    border-right: 1px solid #FFFFFF;
+  }
   </style>
 </head>
 
 <body>
 <div class="headerImage">
-  <div class="header" >
-    <div class="row-fluid brand-country-section">
-      <div id="phdesktopheader_0_phdesktopheadertop_0_pnlBrandBar" class="span7 brand-bar">
-        <ul class="thumbnails">
-          <li class="brand-color">
-            Part of the P&amp;G family
-          </li>
-          <li id="phdesktopheader_0_phdesktopheadertop_0_rptrLinkList_liLinks_0" class="cls-54b5c4be-955f-4eac-8023-f9758dbd9402 item-1 odd first" style="padding-top: 10px;">
-            <a href="http://www.pgestore.com" target="_blank">
-              <img src="https://cdn.messenger.pgsitecore.com/en-us/-/media/Swiffer/Images/Common/PG Family Logos/Swiffer_eStore_01_v3.png?h=15&amp;la=en-US&amp;w=83&amp;v=1-201605192049" alt="P&amp;G eStore" width="83" height="15" title="P&amp;G eStore">
-            </a>
-          </li>
-          <li id="phdesktopheader_0_phdesktopheadertop_0_rptrLinkList_liLinks_1" class="cls-13f00888-5c64-4764-ab38-5e5057065ccf item-2 even " style="padding-top: 9px;">
-            <a href="http://www.pgeveryday.com/" target="_blank">
-              <img src="https://cdn.messenger.pgsitecore.com/en-us/-/media/Swiffer/Images/Common/PG Family Logos/SwifferPGEveryday02_v3.png?h=25&amp;la=en-US&amp;w=97&amp;v=1-201605191954" alt="P&amp;G Everyday" width="97" height="25" title="P&amp;G Everyday">
-            </a>
-          </li>
-        </ul>
-      </div>
 
-      <div id="phdesktopheader_0_phdesktopheadertop_2_pnlCRMHeaderLink" class="span2 row-fluid pull-right contry-selector-sign-bg">
-        <script>
-          if(!window.GSFN.SFTK.user || window.GSFN.SFTK.user == undefined) {
-            var loginHTML = '<div class=" sign-style newsletter"><a href="#" class="event_profile_login">Sign In</a></div>';
-            document.write(loginHTML);
-          }
-          else {
-            var userHTML = '<div class="sign-style newsletter"><span class="welcomeMsgText">Welcome </span>&nbsp;<a href="'+window.GSFN.SFTK.user.profile_url+'" target="_top" class="userName">'+window.GSFN.SFTK.user.display_name+'</a>&nbsp;&nbsp;<a id="phdesktopheader_0_phdesktopheadertop_2_LogOffLink" class="logoutbtn" title="Logout" href="#logout-confirmation-modal">Logout</a></div>';
-            document.write(userHTML);
-          }
-          $('.logoutbtn').click(function(){
-            window.GSFN.SFTK.logout();
-          });
-          $('.event_profile_login').click(function(){
-            window.GSFN.SFTK.login();
-          });
-        </script>
-      </div>
-
-      <div id="logout-confirmation-modal" class="warning-modal modal hide row-fluid" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-header">
-          <button class="close" aria-hidden="true" data-dismiss="modal" type="button">x</button>
-          <h3 id="warning-text-heading">
-            Log Out Confirmation
-          </h3>
+  <div class="header-background">
+    <div class="header" >
+      <div class="row-fluid brand-country-section">
+        <div id="phdesktopheader_0_phdesktopheadertop_0_pnlBrandBar" class="span7 brand-bar">
+          <ul class="thumbnails">
+            <li class="brand-color">
+              Part of the P&amp;G family
+            </li>
+            <li id="phdesktopheader_0_phdesktopheadertop_0_rptrLinkList_liLinks_0" class="cls-54b5c4be-955f-4eac-8023-f9758dbd9402 item-1 odd first" style="padding-top: 10px;">
+              <a href="http://www.pgestore.com" target="_blank">
+                <img src="images/pgstore-original.png" class="pgstore-img" alt="P&amp;G eStore" width="83" height="15" title="P&amp;G eStore">
+              </a>
+            </li>
+            <li id="phdesktopheader_0_phdesktopheadertop_0_rptrLinkList_liLinks_1" class="cls-13f00888-5c64-4764-ab38-5e5057065ccf item-2 even " style="padding-top: 9px;">
+              <a href="http://www.pgeveryday.com/" target="_blank">
+                <img src="images/pgeveryday-original.png" class="pgeveryday-img" alt="P&amp;G Everyday" width="97" height="25" title="P&amp;G Everyday">
+              </a>
+            </li>
+          </ul>
         </div>
-        <div class="modal-body">
-          Would you like to log out now?
-          <a id="phdesktopheader_0_phdesktopheadertop_2_anchrContinue" class="continue-btn btn event_profile_logout" title="Log Out" href="javascript:__doPostBack('phdesktopheader_0$phdesktopheadertop_2$anchrContinue','')">
-            Log Out
-          </a>
+
+        <div id="phdesktopheader_0_phdesktopheadertop_2_pnlCRMHeaderLink" class="span2 row-fluid pull-right contry-selector-sign-bg">
+          <script>
+            if(!window.GSFN.SFTK.user || window.GSFN.SFTK.user == undefined) {
+              var loginHTML = '<div class=" sign-style newsletter"><a href="#" class="event_profile_login">Sign In</a></div>';
+              document.write(loginHTML);
+            }
+            else {
+              var userHTML = '<div class="sign-style newsletter"><span class="welcomeMsgText">Welcome </span>&nbsp;<a href="'+window.GSFN.SFTK.user.profile_url+'" target="_top" class="userName">'+window.GSFN.SFTK.user.display_name+'</a>&nbsp;&nbsp;<a id="phdesktopheader_0_phdesktopheadertop_2_LogOffLink" class="logoutbtn" title="Logout" href="#logout-confirmation-modal">Logout</a></div>';
+              document.write(userHTML);
+            }
+            $('.logoutbtn').click(function(){
+              window.GSFN.SFTK.logout();
+            });
+            $('.event_profile_login').click(function(){
+              window.GSFN.SFTK.login();
+            });
+          </script>
+        </div>
+
+        <div id="logout-confirmation-modal" class="warning-modal modal hide row-fluid" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-header">
+            <button class="close" aria-hidden="true" data-dismiss="modal" type="button">x</button>
+            <h3 id="warning-text-heading">
+              Log Out Confirmation
+            </h3>
+          </div>
+          <div class="modal-body">
+            Would you like to log out now?
+            <a id="phdesktopheader_0_phdesktopheadertop_2_anchrContinue" class="continue-btn btn event_profile_logout" title="Log Out" href="javascript:__doPostBack('phdesktopheader_0$phdesktopheadertop_2$anchrContinue','')">
+              Log Out
+            </a>
+          </div>
         </div>
       </div>
     </div>
+  </div>
 
+  <div class="header">
     <div class="row-fluid logo-search-section">
       <div id="phdesktopheader_0_phdesktopheadermiddle_0_divLogo" class="span2 logo">
-        <a id="phdesktopheader_0_phdesktopheadermiddle_0_hprLogoLink" class="brand-logo" target="_top" title="Reward Me" href="https://www.rewardme.in/"><img src="https://image.rewardme.in/LayoutAssets/Core/Images/Logo/en-IN/logoEverydayme.gif" alt="Reward Me logo" width="214" height="106" title="Rewardme logo"></a>
+        <a id="phdesktopheader_0_phdesktopheadermiddle_0_hprLogoLink" class="brand-logo" target="_top" title="Reward Me" href="https://www.rewardme.in/">
+          <img src="" alt="Reward Me logo" width="214" height="106" title="Rewardme logo">
+        </a>
         <div class="clear">&nbsp;</div>
       </div>
       <div class="header-heading">
-        <h2>Reward Me Questions & Answers</h2>
+        <h2>Questions & Answers</h2>
       </div>
       <input type="hidden" id="hiddenCurrentItemID" class="hiddenCurrentItemID" value="{D722C9F9-14DB-4FC0-80EA-BD3EC53FCF9D}">
       <input type="hidden" id="hiddenCurrentChannel" class="hiddenCurrentChannel" value="Default">
@@ -229,6 +253,15 @@ localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgcl
 <script>
   if(document.referrer != 'https://getsatisfaction.com/rewardme'){
     $('.searchFormDiv').hide();
+  }
+
+  if(document.referrer.indexOf('categories/rewardme_gillette') > -1){
+    $('.header-background, .brand-logo').addClass('gillette');
+    $('.header-background.gillette .pgstore-img').attr('src', 'images/pgstore-white.png');
+    $('.header-background .pgeveryday-img').attr('src', 'images/pgeveryday-white.png');
+    $('.brand-logo img').attr('src', 'images/gillette-header.png');
+  }else {
+    $('.brand-logo img').attr('src', 'images/rewardme-logo.png');
   }
 </script>
 </body>
