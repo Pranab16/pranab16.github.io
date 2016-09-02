@@ -1,0 +1,235 @@
+<html>
+<head>
+  <!-- Icons -->
+  <link rel="shortcut icon" href="https://getsatisfaction.com/corp/img/icons/favicon.ico">
+  <link rel="apple-touch-icon" href="https://getsatisfaction.com/corp/img/icons/apple-touch-icon.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="https://getsatisfaction.com/corp/img/icons/apple-touch-icon-72x72-precomposed.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="https://getsatisfaction.com/corp/img/icons/apple-touch-icon-114x114-precomposed.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="https://getsatisfaction.com/corp/img/icons/apple-touch-icon-144x144-precomposed.png" />
+
+  <style>
+    body {
+      font-size: 16px;
+      line-height: 1.5;
+      background: #222;
+      color: #777777;
+      margin: 0;
+      font-family: "BentonSans", "helvetica neue", sans-serif;
+    }
+    #main-header {
+      background: #fff;
+      position: relative;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 1000;
+      border-bottom: 1px solid #ddd;
+    }
+    .full-width {
+      position: relative;
+      width: 100%;
+    }
+    .container {
+      position: relative;
+      width: 1055px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    nav#main-nav {
+      height: 84px;
+      position: relative;
+    }
+    .span12 {
+      width: 940px;
+    }
+    .logo {
+      position: absolute;
+      bottom: 15px;
+      left: 0;
+      display: block;
+      width: 206px;
+      height: 48px;
+      -webkit-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      -transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+    }
+    .mobile-hide-show {
+      display: none;
+    }
+    nav a {
+      color: #666;
+      text-decoration: none;
+    }
+    nav a:hover, nav a:focus {
+      color: #F47D31;
+    }
+    nav#main-nav {
+      height: 84px;
+      position: relative;
+    }
+    nav#main-nav ul#main-nav-items {
+      position: absolute;
+      top: 50px;
+      right: 0;
+    }
+    nav ul, nav ol {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      list-style-image: none;
+    }
+    nav li {
+      display: inline-block;
+      margin-left: 25px;
+      position: relative;
+    }
+
+    /**** **** **** **** ****
+     - Medium Screen Size -
+    **** **** **** **** ****/
+    @media (min-width: 768px) and (max-width: 979px) {
+      .container {
+        width: 724px;
+      }
+      .span12 {
+        width: 724px;
+      }
+      .logo {
+        width: 140px;
+        height: 33px;
+      }
+      .logo img {
+        width: 140px !important;
+        height: 33px !important;
+      }
+      nav#main-nav {
+        margin-bottom: 0;
+      }
+      nav#main-nav ul#main-nav-items li {
+        margin-left: 15px;
+        font-size: .95em;
+      }
+    }
+  </style>
+</head>
+<body class="home">
+
+<header id="main-header">
+  <div class="full-width">
+    <div class="container">
+      <div class="row">
+        <nav id="main-nav" class="span12">
+          <a href="https://getsatisfaction.com" class="logo" target="_top">
+            <img id="getsatisfaction-logo" data-src="https://getsatisfaction.com/corp/img/structure/get-satisfaction.png" data-alt="Get Satisfaction - Customer Communities For Social Support, Social Marketing and Customer Feedback" data-width="206" />
+          </a>
+          <a href="#" class="mobile-hide-show">â‰£</a>
+          <ul id="main-nav-items">
+            <li data-type="dropdown">
+              <a href="https://getsatisfaction.com/corp/product/" target="_top">Product</a>
+            </li>
+            <li><a href="https://getsatisfaction.com/corp/pricing/"  target="_top">Pricing</a></li>
+            <li data-type="dropdown">
+              <a href="https://getsatisfaction.com/corp/customers/" target="_top" >Customers</a>
+            </li>
+            <li><a href="https://getsatisfaction.com/corp/resource-center/" target="_top" >Resource Center</a></li>
+            <li data-type="dropdown">
+              <a href="https://getsatisfaction.com/corp/help/" target="_top">Support</a>
+            </li>
+            <li data-type="dropdown">
+              <a href="https://getsatisfaction.com/corp/about/"  target="_top">About Us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<noscript id="deferred-styles">
+  <!-- webfont link -->
+  <link href="https://cloud.webtype.com/css/ae097ff8-e75a-426f-a9fe-b5a2325868d4.css" rel="stylesheet" type="text/css" />
+</noscript>
+<script>
+  var loadDeferredStyles = function() {
+    var addStylesNode = document.getElementById("deferred-styles");
+    var replacement = document.createElement("div");
+    replacement.innerHTML = addStylesNode.textContent;
+    document.body.appendChild(replacement);
+    addStylesNode.parentElement.removeChild(addStylesNode);
+  };
+  window.addEventListener('load', loadDeferredStyles);
+</script>
+
+<script type="text/javascript">
+  function getCookie(c_name) {
+    var i,x,y,ARRcookies=document.cookie.split(";");
+    for (i=0;i<ARRcookies.length;i++) {
+      x=ARRcookies[i].substr(0,ARRcookies[i].indexOf("="));
+      y=ARRcookies[i].substr(ARRcookies[i].indexOf("=")+1);
+      x=x.replace(/^\s+|\s+$/g,"");
+      if (x==c_name) {
+        return unescape(y);
+      }
+    }
+  }
+
+  function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+  }
+
+  function loadScript( url, callback ) {
+    var script = document.createElement( "script" );
+    script.type = "text/javascript";
+    if(script.readyState) {  //IE
+      script.onreadystatechange = function() {
+        if ( script.readyState === "loaded" || script.readyState === "complete" ) {
+          script.onreadystatechange = null;
+          callback();
+        }
+      };
+    } else {  //Others
+      script.onload = function() {
+        callback();
+      };
+    }
+
+    script.src = url;
+    document.body.appendChild(script);
+  }
+
+  var loadDeferredJs = function() {
+    var gs_url = getParameterByName('_gsurl');
+    if (gs_url) {
+      loadScript(document.location.protocol + "//munchkin.marketo.net/munchkin.js", function() {
+        mktoMunchkinFunction('visitWebPage', {url: "https://getsatisfaction.com" + gs_url });
+      });
+    }
+
+    var logo = document.getElementById("getsatisfaction-logo");
+    logo.setAttribute('src', logo.getAttribute('data-src'));
+    logo.setAttribute('alt', logo.getAttribute('data-alt'));
+    logo.setAttribute('width', logo.getAttribute('data-width'));
+  };
+
+  window.addEventListener('load', loadDeferredJs);
+</script>
+
+<!-- GS Community Analytics code -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-70293906-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>
