@@ -122,7 +122,7 @@
       <div class="row">
         <nav id="main-nav" class="span12">
           <a href="https://getsatisfaction.com" class="logo" target="_top">
-            <img id="getsatisfaction-logo" data-src="https://getsatisfaction.com/corp/img/structure/get-satisfaction.png" data-alt="Get Satisfaction - Customer Communities For Social Support, Social Marketing and Customer Feedback" data-width="206" />
+            <img id="getsatisfaction-logo" data-src="https://d2r1vs3d9006ap.cloudfront.net/custom_headers/getsatisfaction/get-satisfaction.png" data-alt="Get Satisfaction - Customer Communities For Social Support, Social Marketing and Customer Feedback" data-width="206" />
           </a>
           <a href="#" class="mobile-hide-show">â‰£</a>
           <ul id="main-nav-items">
@@ -185,14 +185,14 @@
   function loadScript( url, callback ) {
     var script = document.createElement( "script" );
     script.type = "text/javascript";
-    if(script.readyState) {  //IE
+    if(script.readyState) {
       script.onreadystatechange = function() {
         if ( script.readyState === "loaded" || script.readyState === "complete" ) {
           script.onreadystatechange = null;
           callback();
         }
       };
-    } else {  //Others
+    } else {
       script.onload = function() {
         callback();
       };
