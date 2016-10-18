@@ -232,7 +232,7 @@ localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgcl
 
 <div class="clear">&nbsp;</div>
 
-<div class="searchFormDiv">
+<div class="searchFormDiv" style="display:none">
   <div class="component search-component" id="community-search">
     <form accept-charset="UTF-8" target="_top" action="https://getsatisfaction.com/swiffer/topics/search/show" method="get">
       <div style="display:none">
@@ -247,8 +247,8 @@ localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgcl
   </div>
 </div>
 <script>
-  if(document.referrer != 'https://getsatisfaction.com/swiffer'){
-    $('.searchFormDiv').hide();
+  if(document.referrer == 'https://getsatisfaction.com/swiffer'){
+    $('.searchFormDiv').show();
   }
 </script>
 </body>
