@@ -5,6 +5,19 @@
   <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400" media="screen" rel="stylesheet">
   
   <style>
+    .question-list > ul > li {
+      padding-bottom: 8px;
+    }
+    .question-list > ul > li.last {
+      padding-bottom: 0;
+    }
+    .question-list > ul > li > a {
+      color: #666;
+    }
+    .question-list > ul > li > a:hover {
+      text-decoration: underline;
+    }
+
     h2 {
       color: #3983C5;
       font-size: 30px;
@@ -18,7 +31,7 @@
     }
     .ask-question {
       color: #FFF;
-      background: #D72DA8;
+      background: #1a69f8;
       text-align: center;
       padding: 10px;
       border-radius: 3px;
@@ -48,16 +61,8 @@
       width: 240px;
       margin-left: 15px;
     }
-    .question-icon {
-      background: url("images/ask-question.png");
-      background-repeat: no-repeat;
-      height: 45px;
-      width: 50px;
-      background-size: contain;
-      display: inline-block;
-    }
     .email-icon {
-      background: url("images/email-us.png");
+      background: url("images/email-us.svg");
       background-repeat: no-repeat;
       height: 45px;
       width: 45px;
@@ -65,25 +70,14 @@
       display: inline-block;
     }
     .call-icon {
-      background: url("images/call-us.png");
+      background: url("images/call-us.svg");
       background-repeat: no-repeat;
       height: 40px;
       width: 40px;
       background-size: contain;
       display: inline-block;
     }
-    .question-list > ul > li {
-      padding-bottom: 8px;
-    }
-    .question-list > ul > li.last {
-      padding-bottom: 0;
-    }
-    .question-list > ul > li > a {
-      color: #666;
-    }
-    .question-list > ul > li > a:hover {
-      text-decoration: underline;
-    }
+
   </style>
 </head>
 <body style="font-size: 15px">
@@ -107,17 +101,18 @@
   </ul>
 </div>
 <div>
-  <h2>Contact Us</h2>
-  <p>Still have question?</p>
+  <h2>Can't find an answer?</h2>
   <p>
-    <span class="question-icon"></span>
     <a href="https://getsatisfaction.com/rewardme/topics/new/add_details?topic%5Bsubject%5D=test" target="_top" class="ask-question">Ask a New Question</a>
   </p>
   <p>
     <span class="email-icon"></span>
-    <a class="emailUs" target="_top" href="https://pgconsumersupport.secure.force.com/ContactUs/emailus?brand=rewardme&language=English-US">Email Us</a>
+    <a class="emailUs" target="_top" href="https://pgconsumersupport.secure.force.com/ContactUs/emailus?brand=rewardme&language=English-US">Send us an Email</a>
   </p>
-  <p><span class="call-icon"></span><span class="call-us">Call Us 1-800-214-8734<br>9:00AM - 6:00PM EST Monday - Friday</span></p>
+  <p>
+    <span class="call-icon"></span>
+    <span class="call-us">(91-22) 2826 6000</span>
+  </p>
 </div>
 </body>
 </html>

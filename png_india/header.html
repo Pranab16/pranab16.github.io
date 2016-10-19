@@ -86,6 +86,7 @@ localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgcl
   .header2 {
     background-image: url('images/pg-header-background.png');
     height: 65px;
+    margin-bottom: 20px;
   }
   .header2 .logo-search-section {
     position: absolute;
@@ -111,16 +112,18 @@ localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgcl
     right: 95px;
   }
 
-  .header3 .header-heading {
-    padding-top: 2%;
-    padding-bottom: 1%;
+  .header3 .product-logo {
+    display: none;
   }
   .header3 .header-heading h2 {
     text-align: center;
-    font-size: 35px;
+    font-size: 30px;
     font-family: Avenir;
   }
 
+  .header4 {
+    margin-top: 10px;
+  }
   .header4 .input.highlighted {
     padding: 0;
     position: relative;
@@ -158,6 +161,157 @@ localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgcl
     content: "\e063";
   }
 
+  .category .header2 {
+    display: none;
+  }
+  .category .header3 {
+    height: 120px;
+  }
+  .category .header3 .header {
+    position: relative;
+    height: 100%;
+  }
+  .category .header3 .logo img {
+    max-height: 110px;
+  }
+  .category .header3 .logo {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    width: 100%;
+  }
+  .category .header3 .header-heading {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  /**** **** **** **** ****
+    - Rewardme Styles -
+   **** **** **** **** ****/
+  .reward_me .header3 {
+    background-image: url('images/reward-me/header-background.png');
+    background-size: 100% 120px;
+  }
+  .reward_me .header3 .reward_me-logo{
+    display: block;
+  }
+
+  /**** **** **** **** ****
+    - Gillette Styles -
+   **** **** **** **** ****/
+  .gillette .header3 {
+    background-color: #0C2E4A;
+  }
+  .gillette .header3 .gillette-logo {
+    display: block;
+  }
+  .gillette .header3 .header-heading h2 {
+    color: #FFFFFF;
+  }
+
+  /**** **** **** **** ****
+    - Pantene Styles -
+   **** **** **** **** ****/
+  .pantene .header3 {
+    background-image: url('images/pantene/header-background.png');
+    background-size: 100% 120px;
+  }
+  .pantene .header3 .pantene-logo{
+    display: block;
+  }
+
+  /**** **** **** **** ****
+    - Pampers Styles -
+   **** **** **** **** ****/
+  .pampers .header3 {
+    background-color: #00989E;
+  }
+  .pampers .header3 .pampers-logo{
+    display: block;
+  }
+  .pampers .header3 .header-heading h2 {
+    color: #FFFFFF;
+  }
+
+  /**** **** **** **** ****
+    - Olay Styles -
+   **** **** **** **** ****/
+  .olay .header3 {
+    background-color: #000000;
+  }
+  .olay .header3 .olay-logo{
+    display: block;
+  }
+  .olay .header3 .header-heading h2 {
+    color: #FFFFFF;
+  }
+
+  /**** **** **** **** ****
+    - Head & Shoulders Styles -
+   **** **** **** **** ****/
+  .head_shoulders .header3 {
+    background-image: url('images/head-shoulders/header-background.png');
+    background-size: 100% 120px;
+  }
+  .head_shoulders .header3 .head_shoulders-logo{
+    display: block;
+  }
+  .head_shoulders .header3 .header-heading h2 {
+    color: #0053A3;
+  }
+
+  /**** **** **** **** ****
+    - Ariel Styles -
+   **** **** **** **** ****/
+  .ariel .header3 .ariel-logo{
+    display: block;
+  }
+
+  /**** **** **** **** ****
+    - Vicks Styles -
+   **** **** **** **** ****/
+  .vicks .header3 {
+    background-image: url('images/vicks/header-background.png');
+    background-size: 100% 120px;
+  }
+  .vicks .header3 .vicks-logo{
+    display: block;
+  }
+  .vicks .header3 .header-heading h2 {
+    color: #FFFFFF;
+  }
+
+  /**** **** **** **** ****
+    - Vicks Styles -
+   **** **** **** **** ****/
+  .oral_b .header3 {
+    background-image: url('images/oral-b/header-background.png');
+    background-size: 100% 120px;
+  }
+  .oral_b .header3 .oral_b-logo{
+    display: block;
+  }
+  .oral_b .header3 .header-heading h2 {
+    color: #FFFFFF;
+  }
+  /**** **** **** **** ****
+    - Whisper Styles -
+    **** **** **** **** ****/
+  .whisper .header3 {
+    background-color: #185a34;
+  }
+  .whisper .header3 .whisper-logo{
+    display: block;
+  }
+  .whisper .header3 .header-heading h2 {
+    color: #FFFFFF;
+  }
+  .whisper .header3 .logo .product-logo img {
+    max-height: 85px;
+  }
+
+
   /**** **** **** **** ****
    - Medium Screen Size -
   **** **** **** **** ****/
@@ -180,7 +334,22 @@ localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgcl
     .header1 .brand-bar .thumbnails li.mobile {
       display: block;
     }
+    .header3 .header-heading h2 {
+      font-size: 20px;
+    }
+    .category .header3 .logo {
+      transform: translateY(-30%);
+      top: 30%;
+      width: 100%;
+    }
+    .category .header3 .logo .product-logo {
+      text-align: center;
+    }
+    .category .header3 .logo .product-logo img {
+      max-height: 80px;
+    }
   }
+
   </style>
 </head>
 
@@ -189,21 +358,61 @@ localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgcl
   <div class="header1">
     <div class="header">
       <div class="row-fluid brand-country-section">
-        <div id="phdesktopheader_0_phdesktopheadertop_0_pnlBrandBar" class="brand-bar pull-left">
+        <div class="brand-bar pull-left">
           <ul class="thumbnails">
             <li class="brand-color">
               Part of the P&amp;G family
             </li>
-            <li id="phdesktopheader_0_phdesktopheadertop_0_rptrLinkList_liLinks_0" class="mobile" style="padding-top: 10px;">
+            <li class="mobile" style="padding-top: 10px;">
               <a href="http://www.pg.com/en_IN/" target="_blank">
-                <img src="images/pg.png" class="pg-img" alt="P&amp;G" title="P&amp;G">
+                <img src="images/pg-logo-family.png" class="pg-img" alt="P&amp;G" title="P&amp;G">
               </a>
             </li>
-            <li id="phdesktopheader_0_phdesktopheadertop_0_rptrLinkList_liLinks_1" style="padding-top: 9px;">
-              <a href="http://www.pgeveryday.com/" target="_blank">
-                <img src="images/pgeveryday-original.png" class="pgeveryday-img" alt="P&amp;G Everyday" width="97" height="25" title="P&amp;G Everyday">
+            <li style="padding-top: 5px;">
+              <a href="https://www.rewardme.in/" target="_blank">
+                <img src="images/reward-me/family-logo.png" class="rewardme-img" alt="Reward Me" title="Reward Me">
               </a>
             </li>
+            <li style="padding-top: 9px;">
+              <a href="http://www.gillette.co.in/en-in" target="_blank">
+                <img src="images/gillette/family-logo.png" class="gillette-img" alt="Gillette" title="Gillette">
+              </a>
+            </li>
+            <li style="padding-top: 8px;">
+              <a href="http://www.olay.in/en-in" target="_blank">
+                <img src="images/olay/family-logo.png" class="olay-img" alt="Olay" title="Olay">
+              </a>
+            </li>
+            <li style="padding-top: 5px;">
+              <a href="http://www.in.pampers.com/" target="_blank">
+                <img src="images/pampers/family-logo.png" class="pampers-img" alt="Pampers" title="Pampers">
+              </a>
+            </li>
+            <!--<li style="padding-top: 10px;">-->
+              <!--<a href="http://pantene.com/en-in" target="_blank">-->
+                <!--<img src="images/pantene/family-logo.png" class="pantene-img" alt="Pantene" title="Pantene">-->
+              <!--</a>-->
+            <!--</li>-->
+            <!--<li style="padding-top: 5px;">-->
+              <!--<a href="https://www.rewardme.in/tag/whisper" target="_blank">-->
+                <!--<img src="images/whisper/family-logo.png" class="whisper-img" alt="Whisper" title="Whisper">-->
+              <!--</a>-->
+            <!--</li>-->
+            <!--<li style="padding-top: 5px;">-->
+              <!--<a href="http://www.vicks.co.in/" target="_blank">-->
+                <!--<img src="images/vicks/family-logo.png" class="vicks-img" alt="Vicks" title="Vicks">-->
+              <!--</a>-->
+            <!--</li>-->
+            <!--<li style="padding-top: 3px;">-->
+              <!--<a href="http://www.headandshoulders.co.in/" target="_blank">-->
+                <!--<img src="images/head-shoulders/family-logo.png" class="headandshoulders-img" alt="Head and Shoulders" title="Head and Shoulders">-->
+              <!--</a>-->
+            <!--</li>-->
+            <!--<li style="padding-top: 10px;">-->
+              <!--<a href="http://www.ariel.in/en-IN/Default.aspx" target="_blank">-->
+                <!--<img src="images/ariel/family-logo.png" class="ariel-img" alt="Ariel" title="Ariel">-->
+              <!--</a>-->
+            <!--</li>-->
           </ul>
         </div>
 
@@ -235,7 +444,7 @@ localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgcl
           </div>
           <div class="modal-body">
             Would you like to log out now?
-            <a id="phdesktopheader_0_phdesktopheadertop_2_anchrContinue" class="continue-btn btn event_profile_logout" title="Log Out" href="javascript:__doPostBack('phdesktopheader_0$phdesktopheadertop_2$anchrContinue','')">
+            <a class="continue-btn btn event_profile_logout" title="Log Out" href="javascript:__doPostBack('phdesktopheader_0$phdesktopheadertop_2$anchrContinue','')">
               Log Out
             </a>
           </div>
@@ -246,8 +455,8 @@ localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgcl
   <div class="header2">
     <div class="header">
       <div class="row-fluid logo-search-section">
-        <div id="phdesktopheader_0_phdesktopheadermiddle_0_divLogo" class="span2 logo">
-          <a id="phdesktopheader_0_phdesktopheadermiddle_0_hprLogoLink" class="brand-logo" target="_top" title="P&G India" href="http://www.pg.com/en_IN//">
+        <div class="span2 logo">
+          <a class="brand-logo" target="_top" title="P&G India" href="http://www.pg.com/en_IN/">
             <img src="images/pg-header-logo.png" alt="P&G India logo" title="P&G India logo">
           </a>
         </div>
@@ -259,13 +468,40 @@ localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgcl
   </div>
   <div class="header3">
     <div class="header">
-      <div class="row-fluid logo-search-section">
-        <div class="header-heading">
-          <h2>Questions & Answers</h2>
-        </div>
-        <input type="hidden" id="hiddenCurrentItemID" class="hiddenCurrentItemID" value="{D722C9F9-14DB-4FC0-80EA-BD3EC53FCF9D}">
-        <input type="hidden" id="hiddenCurrentChannel" class="hiddenCurrentChannel" value="Default">
-        <input type="hidden" id="hidIsSmartSearchEnabled" class="hidIsSmartSearchEnabled" value="False">
+      <div class="logo">
+        <a class="product-logo reward_me-logo" target="_top" title="Reward Me" href="https://www.rewardme.in/">
+          <img src="images/reward-me/header-logo.png" alt="Reward Me Logo" title="Reward Me Logo">
+        </a>
+        <a class="product-logo gillette-logo" target="_top" title="P&G India" href="http://www.gillette.co.in/en-in">
+          <img src="images/gillette/header-logo.png" alt="Gillette logo" title="Gillette logo">
+        </a>
+        <a class="product-logo olay-logo" target="_top" title="P&G India" href="http://www.olay.in/en-in">
+          <img src="images/olay/header-logo.png" alt="Olay logo" title="Olay logo">
+        </a>
+        <a class="product-logo pampers-logo" target="_top" title="P&G India" href="http://www.in.pampers.com/">
+          <img src="images/pampers/header-logo.png" alt="Pampers logo" title="Pampers logo">
+        </a>
+        <a class="product-logo pantene-logo" target="_top" title="P&G India" href="http://pantene.com/en-in">
+          <img src="images/pantene/header-logo.png" alt="Pantene logo" title="Pantene logo">
+        </a>
+        <a class="product-logo vicks-logo" target="_top" title="P&G India" href="http://www.pg.com/en_IN/">
+          <img src="images/vicks/header-logo.png" alt="Vicks logo" title="Vicks logo">
+        </a>
+        <a class="product-logo head_shoulders-logo" target="_top" title="P&G India" href="http://www.headandshoulders.co.in/">
+          <img src="images/head-shoulders/header-logo.png" alt="Head & Shoulders logo" title="Head & Shoulders logo">
+        </a>
+        <a class="product-logo ariel-logo" target="_top" title="P&G India" href="http://www.ariel.in/en-IN/Default.aspx">
+          <img src="images/ariel/header-logo.png" alt="Ariel logo" title="Ariel logo">
+        </a>
+        <a class="product-logo oral_b-logo" target="_top" title="P&G India" href="http://www.oral-b.co.in/contact/">
+          <img src="images/oral-b/header-logo.png" alt="Oral-B logo" title="Oral-B logo">
+        </a>
+        <a class="product-logo whisper-logo" target="_top" title="P&G India" href="https://www.rewardme.in/tag/whisper">
+          <img src="images/whisper/header-logo.png" alt="Whisper logo" title="Whisper logo">
+        </a>
+      </div>
+      <div class="header-heading">
+        <h2>Questions & Answers</h2>
       </div>
     </div>
   </div>
@@ -289,5 +525,11 @@ localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgcl
   </div>
 </div>
 
+<script>
+  if(document.referrer.indexOf('/categories/en_IN') > -1){
+    var category = window.location.pathname.split('/')[3].split('en_IN_')[1];
+    $('.headerImage').addClass('category ' + category);
+  }
+</script>
 </body>
 </html>
