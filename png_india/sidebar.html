@@ -93,13 +93,13 @@
       text-decoration: underline;
     }
     .custom-sidebar-container .contact-details .email-us, .custom-sidebar-container .contact-details .call-us {
-      color: #666;
+      color: #000;
       display: inline-block;
       margin-left: 15px;
       position: absolute;
       transform: translateY(-50%);
       top: 50%;
-      font-size: 16px;
+      font-size: 18px;
       font-weight: bolder;
       font-family: sans-serif;
     }
@@ -114,13 +114,36 @@
       - Small Screen Size -
     **** **** **** **** ****/
     @media (max-device-width: 767px) {
+      .custom-sidebar-container {
+        margin: 0 5%;
+      }
+      .custom-sidebar-container h2 {
+        text-align: center;
+        font-size: 22.5px;
+      }
+      .custom-sidebar-container .question-list ul li a {
+        font-size: 13.5px;
+      }
       .custom-sidebar-container .ask-question-message-container {
         display: none;
       }
     }
 
+    /**** **** **** **** ********
+    - Firefox Small Screen Size -
+    **** **** **** **** *********/
     @-moz-document url-prefix() {
       @media screen and (max-width: 767px) {
+        .custom-sidebar-container {
+          margin: 0 5%;
+        }
+        .custom-sidebar-container h2 {
+          text-align: center;
+          font-size: 22.5px;
+        }
+        .custom-sidebar-container .question-list ul li a {
+          font-size: 13.5px;
+        }
         .custom-sidebar-container .ask-question-message-container {
           display: none;
         }
