@@ -14,13 +14,15 @@
         background-image: linear-gradient(#eee, white);
         font-size:14px;
     }
-    .container_new {padding-top: 10px;width:}
-    .container_new a {color:#000;}
-    
+    .container {padding-top: 10px;}
+    .container a {color:#000;}
+    @media (max-width: 767px) {
+      .container {width:100% !important;}  
+    }
   </style>  
 </head>
 <body>
-  <div class="container_new">
+  <div class="container">
   <div style="float:left;display:inline-block"><a href="http://www.pg.com/en_IN/terms_conditions/index.shtml" target="_blank">Terms & Conditions</a></div>
   <div style="float:right;display:inline-block"><a href="http://www.pg.com/privacy/english/privacy_notice.shtml" target="_blank">Privacy Notice</a></div>
 </div>
