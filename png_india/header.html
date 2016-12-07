@@ -57,6 +57,7 @@ localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgcl
   }
   .header2 .logo-search-section {
     position: absolute;
+    width: initial;
   }
   .header2 .logo {
     position: relative;
@@ -69,6 +70,9 @@ localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgcl
     height: 109px;
     width: 204px;
   }
+  .header2 .header2-text {
+    display: inline-block;
+  }
   .header2 .header2-text span {
     color: #FFFFFF;
     font-style: italic;
@@ -78,6 +82,19 @@ localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgcl
     top: 26px;
     right: 95px;
   }
+  .header2 .contact-section {
+    float: right;
+    font-family: Avenir, Source Sans Pro, Helvetica, Arial, sans-serif;;
+    color: #fff;
+    font-size: 13px;
+    margin-top: 6px;
+    padding-right: 10px;
+    text-align: end;
+  }
+
+  .header2 .contact-section a {
+    color: #fff;
+  }
 
   .header3 .product-logo {
     display: none;
@@ -86,6 +103,9 @@ localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgcl
     text-align: center;
     font-size: 30px;
     font-family: Avenir, Source Sans Pro, Helvetica, Arial, sans-serif;
+  }
+  .header3 .header-heading .email-us-container {
+    display: none;
   }
 
   .header4 {
@@ -164,6 +184,23 @@ localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgcl
   }
   .reward_me .header3 .reward_me-logo{
     display: block;
+  }
+  .reward_me .header3 .header-heading h2 {
+    float: left;
+    margin-left: 36%;
+  }
+  .reward_me .header3 .header-heading .email-us-container {
+    display: block;
+    position: relative;
+    float: right;
+    font-size: 30px;
+    font-family: Avenir, Source Sans Pro, Helvetica, Arial, sans-serif;
+  }
+  .reward_me .header3 .header-heading .email-us-container img {
+    width: 27px;
+    position: absolute;
+    left: -30px;
+    top: 7px;
   }
 
   /**** **** **** **** ****
@@ -357,6 +394,9 @@ localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgcl
     .header1 .brand-bar .thumbnails li.mobile {
       display: block;
     }
+    .header2 .contact-section .timing {
+      font-size: 11px;
+    }
     .header3 .header-heading h2 {
       font-size: 20px;
     }
@@ -370,6 +410,17 @@ localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgcl
     }
     .category .header3 .logo .product-logo img {
       max-height: 80px;
+    }
+    .reward_me .header3 .header-heading h2 {
+      margin-left: 0;
+    }
+    .reward_me .header3 .header-heading .email-us-container {
+      font-size: 20px;
+    }
+    .reward_me .header3 .header-heading .email-us-container img {
+      width: 19px;
+      left: -24px;
+      top: 4px;
     }
   }
   </style>
@@ -461,6 +512,14 @@ localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgcl
           <span>India</span>
         </div>
       </div>
+      <div class="contact-section">
+        <div class="email-us-container">
+          <img src="images/email-us-white.png" style="width: 14px;">
+          <a class="email-us" target="_blank" href="https://pgconsumersupport.secure.force.com/ContactUs/emailus?country=India&language=English-US">Email Us</a>
+        </div>
+        <span class="phone" style="display: block;">(91-22) 2826 6000</span>
+        <span class="timing" style="display: block;">9am - 6pm Mon - Fri</span>
+      </div>
     </div>
   </div>
   <div class="header3">
@@ -511,6 +570,10 @@ localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgcl
       </div>
       <div class="header-heading">
         <h2>Questions & Answers</h2>
+        <div class="email-us-container">
+          <img src="images/email-us-grey.png">
+          <a class="email-us" target="_blank" href="https://pgconsumersupport.secure.force.com/ContactUs/emailus?brand=RewardMe&country=India&language=English-US" style="color: #666;">Email Us</a>
+        </div>
       </div>
     </div>
   </div>
