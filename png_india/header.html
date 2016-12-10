@@ -602,6 +602,10 @@ localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgcl
     var category = document.referrer.split('/')[5].split('pgindia_')[1];
     $('.headerImage').addClass('category ' + category);
   }
+
+  if(document.referrer.indexOf('/search') > -1){
+    $('.header4').hide();
+  }
 </script>
 </body>
 </html>
