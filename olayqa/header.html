@@ -107,7 +107,9 @@ localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgcl
   .gs-icon-search:before {
     content: "\e063";
   }
-
+  .header {
+      width: 985px;
+  }
   .header .logo-search-section {
     float: none;
   }
@@ -117,10 +119,10 @@ localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgcl
   }
   .header .logo-search-section .header-heading {
     float: left;
-    padding-top: 10%;
-    padding-left: 5%;
     color: #baa55a;
     padding-bottom: 5px;
+    width: 100%;
+    text-align: center;
   }
   .header .logo-search-section .header-heading h2 {
     font-size: 30px;
@@ -133,10 +135,13 @@ localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgcl
   }
     .header .brand-logo {
       top: -15px !important;
+      right: 0px;
+      width: auto;
     }
     .brand-bar {
       margin-left: 100px !important;
     }
+    
   </style>
 </head>
 
@@ -219,6 +224,7 @@ localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgcl
         </a>
         <div class="clear">&nbsp;</div>
       </div>
+      <div class="clear"></div>
       <div class="header-heading">
         <h2>Olay Questions & Answers</h2>
       </div>
