@@ -192,11 +192,11 @@ localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgcl
       <div id="phdesktopheader_0_phdesktopheadertop_2_pnlCRMHeaderLink" class="span2 row-fluid pull-right contry-selector-sign-bg">
         <script>
           if(!window.GSFN.SFTK.user || window.GSFN.SFTK.user == undefined) {
-            var loginHTML = '<div class=" sign-style newsletter"><a href="#" class="event_profile_login">Sign In</a>&nbsp;&nbsp;<a class="new_question_btn" title="Post a Question" target="_top" href="https://getsatisfaction.com/olayqa/topics/new/add_details?topic[type]=question">Post a Question</a></div>';
+            var loginHTML = '<div class=" sign-style newsletter"><a href="#" class="event_profile_login">Sign In</a><a class="new_question_btn" title="Post a Question" target="_top" href="https://getsatisfaction.com/olayqa/topics/new/add_details?topic[type]=question">Post a Question</a></div>';
             document.write(loginHTML);
           }
           else {
-            var userHTML = '<div class="sign-style newsletter"><span class="welcomeMsgText">Welcome </span>&nbsp;<a href="'+window.GSFN.SFTK.user.profile_url+'" target="_top" class="userName">'+window.GSFN.SFTK.user.display_name+'</a>&nbsp;&nbsp;<a id="phdesktopheader_0_phdesktopheadertop_2_LogOffLink" class="logoutbtn" title="Logout" href="#logout-confirmation-modal">Logout</a>&nbsp;&nbsp;<a class="new_question_btn" title="Post a Question" target="_top" href="https://getsatisfaction.com/olayqa/topics/new/add_details?topic[type]=question">Post a Question</a></div>';
+            var userHTML = '<div class="sign-style newsletter"><span class="welcomeMsgText">Welcome </span>&nbsp;<a href="'+window.GSFN.SFTK.user.profile_url+'" target="_top" class="userName">'+window.GSFN.SFTK.user.display_name+'</a>&nbsp;&nbsp;<a id="phdesktopheader_0_phdesktopheadertop_2_LogOffLink" class="logoutbtn" title="Logout" href="#logout-confirmation-modal">Logout</a><a class="new_question_btn" title="Post a Question" target="_top" href="https://getsatisfaction.com/olayqa/topics/new/add_details?topic[type]=question">Post a Question</a></div>';
             document.write(userHTML);
           }
           $('.logoutbtn').click(function(){
