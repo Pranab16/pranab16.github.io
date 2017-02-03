@@ -174,6 +174,18 @@ localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgcl
   .category .header4 {
     display: none;
   }
+  .new_question_btn {  
+    background: #000;
+    padding: 15px;
+    color: #FFF !important;
+    text-transform: inherit !important;
+  }
+    
+  .mobile .new_question_btn {
+    padding: 0px 15px !important;
+    margin-left: -6px; 
+    display:none !important;
+  }  
 
   /**** **** **** **** ****
     - Rewardme Styles -
@@ -394,6 +406,8 @@ localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgcl
     .header1 .brand-bar .thumbnails li.mobile {
       display: block;
     }
+    .mobile .new_question_btn {display:block !important}
+    .mobile .pg_logo, .newsletter .new_question_btn {display:none !important;}
     .header2 .contact-section .timing {
       font-size: 11px;
     }
@@ -436,10 +450,11 @@ localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgcl
             <li class="brand-color">
               Part of the P&amp;G family
             </li>
-            <li class="mobile" style="padding-top: 10px;">
-              <a href="http://www.pg.com/en_IN/" target="_blank">
+            <li class="mobile" style="padding: 0px;">
+              <a href="http://www.pg.com/en_IN/" target="_blank" style="padding-top: 10px;padding-left: 15px;" class="pg_logo">
                 <img src="images/pg-logo-family.png" class="pg-img" alt="P&amp;G" title="P&amp;G">
               </a>
+              <a class="new_question_btn" title="Post a Question" target="_top" href="https://help.pg.com/en_india/topics/new/add_details?topic[type]=question">Post a Question</a>
             </li>
             <li style="padding-top: 5px;">
               <a href="https://www.rewardme.in/" target="_blank">
@@ -467,11 +482,11 @@ localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgcl
         <div id="phdesktopheader_0_phdesktopheadertop_2_pnlCRMHeaderLink" class="row-fluid pull-right contry-selector-sign-bg">
           <script>
             if(!window.GSFN.SFTK.user || window.GSFN.SFTK.user == undefined) {
-              var loginHTML = '<div class=" sign-style newsletter"><a href="#" class="event_profile_login">Sign In</a></div>';
+              var loginHTML = '<div class=" sign-style newsletter"><a href="#" class="event_profile_login">Sign In</a><a class="new_question_btn" title="Post a Question" target="_top" href="https://help.pg.com/en_india/topics/new/add_details?topic[type]=question">Post a Question</a></div>';
               document.write(loginHTML);
             }
             else {
-              var userHTML = '<div class="sign-style newsletter"><span class="welcomeMsgText">Welcome </span>&nbsp;<a href="'+window.GSFN.SFTK.user.profile_url+'" target="_top" class="userName">'+window.GSFN.SFTK.user.display_name+'</a>&nbsp;&nbsp;<a id="phdesktopheader_0_phdesktopheadertop_2_LogOffLink" class="logoutbtn" title="Logout" href="#logout-confirmation-modal">Logout</a></div>';
+              var userHTML = '<div class="sign-style newsletter"><span class="welcomeMsgText">Welcome </span>&nbsp;<a href="'+window.GSFN.SFTK.user.profile_url+'" target="_top" class="userName">'+window.GSFN.SFTK.user.display_name+'</a>&nbsp;&nbsp;<a id="phdesktopheader_0_phdesktopheadertop_2_LogOffLink" class="logoutbtn" title="Logout" href="#logout-confirmation-modal">Logout</a><a class="new_question_btn" title="Post a Question" target="_top" href="https://help.pg.com/en_india/topics/new/add_details?topic[type]=question">Post a Question</a></div>';
               document.write(userHTML);
             }
             $('.logoutbtn').click(function(){
