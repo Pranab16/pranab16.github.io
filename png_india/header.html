@@ -614,7 +614,7 @@ localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgcl
 
 <script>
   if(document.referrer.indexOf('/categories/pgindia_') > -1){
-    var category = document.referrer.split('/')[5].split('pgindia_')[1];
+    var category = document.referrer.split('?')[0].split('/')[5].split('pgindia_')[1];
     $('.headerImage').addClass('category ' + category);
   }
 
