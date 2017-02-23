@@ -68,6 +68,7 @@ localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgcl
     top: 0px;
     height: 9.4px;
     text-transform: inherit !important;
+    width: 80px;
   }
   .clear {
     clear:both;
@@ -156,6 +157,22 @@ localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgcl
     .header .sign-style {
       margin-right: 100px;
     }
+    @media (max-width: 979px) {
+    .header {
+      width:100% !important;
+    }
+  }
+  @media (min-width: 767px) and (max-width: 840px) {
+    #phdesktopheader_0_phdesktopheadertop_0_pnlBrandBar {
+      margin-left: 0px !important;
+      width: 65%;
+    }
+  }
+  @media (max-width: 767px) {
+    #phdesktopheader_0_phdesktopheadertop_0_pnlBrandBar {
+      display: none;
+    }
+  } 
   </style>
 </head>
 
