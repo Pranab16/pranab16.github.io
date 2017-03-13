@@ -6,9 +6,7 @@
   <script src="https://getsatisfaction.com/code/sftk-1.0.min.js"></script>
   <style>
     .sub-menu-second li {
-      padding-left: 0;
-      padding-right: 0;
-      position: relative;
+      width: 23.3%;
     }
     .sub-menu-second li a {
       color: #000;
@@ -16,8 +14,12 @@
       padding: 0;
     }
     .menu-pic{
-      width: 155px;
-      height: 155px;
+      width: 100%;
+      height: initial;
+      max-width: 100%;
+      max-height: 200px;
+      min-width: 100%;
+      min-height: initial;
     }
     .titleText {
       font: 1em "AvenirNextRoundedW01-Bold";
@@ -26,10 +28,20 @@
       margin-left: 15px;
       color: #fff !important;
     }
+    @media (max-width: 413px) {
+      .sub-menu-second li {
+        width: 22.6%;
+      }
+      .sub-menu-second li .titleText {
+        font: 0.5em "AvenirNextRoundedW01-Bold";
+        top:10px;
+        margin-left: 10px;
+      }
+    }
   </style>
 </head>
 <body>
-  <ul class="sub-menu-second" style="background-color: transparent;">
+  <ul class="sub-menu-second" style="background-color: transparent;padding:0px;">
     <li class="sub-sub submenu-01 versioned-menu-container odd first">
       <a href="https://getsatisfaction.com/swiffer/category_sets/sweeping" target="_parent">
         <img src="images/product4.png" class="menu-pic" alt="Sweeping kits" title="Sweeping kits" />

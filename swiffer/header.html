@@ -123,7 +123,20 @@ localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgcl
     font-size: 30px;
     font-family: AvenirNextRoundedW01-Bold;
   }
+  @media (max-width: 979px) {
+    .header {
+      width:100% !important;
+    }
+    .search-component {width:95%;}
+  }
 
+  @media (max-width: 767px) {
+    #phdesktopheader_0_phdesktopheadertop_0_pnlBrandBar {
+      display: none;
+    }
+    .header .brand-logo {right:0px;}
+    .search-component {width:85%;}
+  } 
   </style>
 </head>
 
